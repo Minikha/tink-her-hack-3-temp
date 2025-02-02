@@ -11,7 +11,7 @@
 - Member 3: [MINIKHA S] - [AHALIA SCHOOL OF ENGINEERING  AND TECHNOLOGY]
 
 ### Hosted Project Link
-[mention your project hosted project link here]
+[https://github.com/Minikha/tink-her-hack-3-temp]
 
 ### Project Description
 The **Mental Health Care Tip** project is a website  designed to support mental well-being through mood tracking and personalized mental health tips. It helps users express their emotions, receive uplifting advice, and relax with soothing movie soundtracks.
