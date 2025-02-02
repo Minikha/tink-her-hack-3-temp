@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mental Health Support</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- Login Page -->
+    <div class="login-container" id="loginContainer">
+        <h2>Login</h2>
+        <input type="text" id="username" placeholder="Username">
+        <input type="password" id="password" placeholder="Password">
+        <button onclick="validateLogin()">Login</button>
+        <p class="error" id="errorMessage"></p>
+    </div>
+
+    <!-- Mood Tracker Page -->
+    <div class="mood-tracker" id="moodTrackerContainer" style="display: none;">
+        <h3>How Are You Feeling Today?</h3>
+        <button onclick="setMood('😊')">😊</button>
+        <button onclick="setMood('😔')">😔</button>
+        <button onclick="setMood('😡')">😡</button>
+        <button onclick="setMood('😐')">😐</button>
+        <button onclick="setMood('😌')">😌</button>
+        <p id="moodDisplay"></p>
+        <button onclick="goToMentalHealthTips()">Next</button>
+    </div>
+
+    <!-- Mental Health Tip Page -->
+    <div class="journal-container" id="journalContainer" style="display: none;">
+        <h2>Mental Health Tip</h2>
+        <textarea id="problemInput" placeholder="Describe your Emotions..."></textarea>
+        <button onclick="getTip()">
+            <div class="spinner" id="spinner"></div>
+            Submit
+        </button>
+        <div class="tip" id="journalTipDisplay"></div>
+        
+        <!-- Music Button -->
+        <button onclick="toggleMusic()">Play Movie Music</button>
+
+        <!-- Hidden Music Player -->
+        <div id="musicPlayer">
+            <h3>Movie Soundtracks</h3>
+            <audio id="audioPlayer" controls>
+                <source src="https://www.bensound.com/bensound-music/bensound-ukulele.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+            <br><br>
+            <button class="music-button" onclick="toggleTrack()">Next Track</button> 
+            <button class="music-button" onclick="toggleMusic()">Hide Music</button>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
